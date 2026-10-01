@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <script>(function(){var r=document.documentElement;r.classList.remove('no-js');
 /* la firma: finché main.js non parte c'è il tessuto senza l'asola nuova; se il codice non arriva, dopo 2,5 s l'asola finita */
 try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add('firma-attesa');window.__attesaAsola=setTimeout(function(){r.classList.remove('firma-attesa')},2500)}}catch(e){}})()</script>
@@ -20,15 +21,60 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unna:wght@400;700&amp;family=Hind+Vadodara:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 <script src="js/main.js?v=1" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Monks Suit","description":"Sartoria su misura in Corso Vittorio Emanuele II 22 a Milano: abiti su misura, riparazioni e modifiche sartoriali, asole fatte a mano, consulenza anche a domicilio. Su appuntamento.","url":"https://rotenzark.github.io/monks-suit/","image":"https://rotenzark.github.io/monks-suit/img/og.jpg","telephone":"+39 02 8699 6644","email":"monks.suit@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Corso Vittorio Emanuele II 22","postalCode":"20122","addressLocality":"Milano","addressRegion":"MI","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.465179,"longitude":9.195324},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"10:00","closes":"17:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"69","bestRating":"5"},"sameAs":["https://www.instagram.com/monks_suit/"]}
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Monks Suit",
+  "description": "Sartoria su misura in Corso Vittorio Emanuele II 22 a Milano: abiti su misura, riparazioni e modifiche sartoriali, asole fatte a mano, consulenza anche a domicilio. Su appuntamento.",
+  "url": "https://rotenzark.github.io/monks-suit/",
+  "image": "https://rotenzark.github.io/monks-suit/img/og.jpg",
+  "telephone": "+39 02 8699 6644",
+  "email": "monks.suit@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Corso Vittorio Emanuele II 22",
+    "postalCode": "20122",
+    "addressLocality": "Milano",
+    "addressRegion": "MI",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.465179,
+    "longitude": 9.195324
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "10:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday"
+      ],
+      "opens": "10:00",
+      "closes": "17:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/monks_suit/"
+  ]
+}
 </script>
 </head>
 <body>
@@ -81,7 +127,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
       <p class="apertura__frase" data-i18n="h.testo">Una sartoria alla terza generazione: le misure, le prove, le modifiche anche sui capi di altri marchi, in laboratorio o a domicilio.</p>
       <p class="voto"><b class="voto__n">4,9</b> <span class="voto__su" data-i18n="h.google">su Google, 69 recensioni</span></p>
       <blockquote class="citazione">
-        <p>«Senza dubbio la migliore sartoria di Milano per precisione, accoglienza e servizio.»</p>
+        <p lang="it">«Senza dubbio la migliore sartoria di Milano per precisione, accoglienza e servizio.»</p>
         <footer data-i18n="h.chi">Silvia Congiu, in una recensione su Google</footer>
       </blockquote>
       <p class="stato" id="orarioStato">Dal lunedì al venerdì 10–19, il sabato 10–17</p>
@@ -224,12 +270,12 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <h2 id="diconoT" class="capitolo__titolo" data-i18n="d.titolo">Cuciti addosso, dicono</h2>
     <p class="voto voto--sezione"><b class="voto__n">4,9</b> <span class="voto__su" data-i18n="d.google">su Google, 69 recensioni</span></p>
     <ul class="cartoncini">
-      <li class="cartoncino reveal"><p class="cartoncino__testo">«Appena entrati nella Sartoria si è affascinati non solo dall'atmosfera di operosita' sartoriale ma anche dalla piacevolissima "aria" familiare che si respira.Con la consueta gentilezza, […] propongono (con una sensibilità ed una competenza professionale raffinatissima) gli interventi sartoriali piu' opportuni, che risultano sempre impeccabili ed eseguiti "a regola d'arte" in ogni dettaglio. Infine le asole fatte a mano (la mia passione) sono piccole opere d'arte, che impreziosiscono e rendono più elegante ogni giacca.Dunque grazie davvero per avermi consentito questa esperienza piacevolissima!»</p><p class="cartoncino__chi"><b>Angelo Pessina</b> <span data-i18n="d.g3m">Google, 3 mesi fa</span></p></li>
-      <li class="cartoncino reveal"><p class="cartoncino__testo">«Un punto di riferimento per me da anni dove torno sempre con piacere. Svolgono sempre lavori impeccabili anche per abiti importanti e modifiche complesse con precisione. […]»</p><p class="cartoncino__chi"><b>Giulia S.</b> <span data-i18n="d.g3s">Google, 3 settimane fa</span></p></li>
-      <li class="cartoncino reveal"><p class="cartoncino__testo">«Mi sono affidato a loro per il vestito della mia laurea e rifarei la stessa scelta altre mille volte. Fin dal primo momento si sono dimostrati estremamente professionali, attenti e soprattutto capaci di guidarmi passo dopo passo nelle scelte.Non si sono limitati a prendere le misure: mi hanno consigliato con grande competenza su abbinamenti come scarpe e cintura, dettagli e stile, sempre con l’obiettivo di valorizzarmi al meglio. Ogni suggerimento era mirato, mai casuale, e il risultato finale lo dimostra. […]»</p><p class="cartoncino__chi"><b>Luca Papetti</b> <span data-i18n="d.g5m">Google, 5 mesi fa</span></p></li>
-      <li class="cartoncino reveal"><p class="cartoncino__testo">«Professionisti come Dio della sartoria comanda !!! Abbiamo dovuto sistemare un abito da donna complessa di organza di seta e lunga. Lo hanno fatto in modo impeccabile . Grazie mille !»</p><p class="cartoncino__chi"><b>Claudia Hamers</b> <span data-i18n="d.g7m">Google, 7 mesi fa</span></p></li>
-      <li class="cartoncino reveal"><p class="cartoncino__testo">«Grazie per tutti i lavori sartoriali svolti per i miei abiti e per il cappotto di mia madre che è stato accorciato alla perfezione. Sartoria molto competente per capi firmati.»</p><p class="cartoncino__chi"><b>Federico Draeke</b> <span data-i18n="d.g4m">Google, 4 mesi fa</span></p></li>
-      <li class="cartoncino reveal"><p class="cartoncino__testo">«Esperienza più che positiva! Mi hanno consigliato questa sartoria per sistemare il mio abito da sposa. Sono stati disponibili e molto professionali nell’esaudire le mie richieste. […] Consiglio vivamente!»</p><p class="cartoncino__chi"><b>Bianca Asnaghi</b> <span data-i18n="d.g1m">Google, 1 mese fa</span></p></li>
+      <li class="cartoncino reveal"><p lang="it" class="cartoncino__testo">«Appena entrati nella Sartoria si è affascinati non solo dall'atmosfera di operosita' sartoriale ma anche dalla piacevolissima "aria" familiare che si respira.Con la consueta gentilezza, […] propongono (con una sensibilità ed una competenza professionale raffinatissima) gli interventi sartoriali piu' opportuni, che risultano sempre impeccabili ed eseguiti "a regola d'arte" in ogni dettaglio. Infine le asole fatte a mano (la mia passione) sono piccole opere d'arte, che impreziosiscono e rendono più elegante ogni giacca.Dunque grazie davvero per avermi consentito questa esperienza piacevolissima!»</p><p class="cartoncino__chi"><b>Angelo Pessina</b> <span data-i18n="d.g3m">Google, 3 mesi fa</span></p></li>
+      <li class="cartoncino reveal"><p lang="it" class="cartoncino__testo">«Un punto di riferimento per me da anni dove torno sempre con piacere. Svolgono sempre lavori impeccabili anche per abiti importanti e modifiche complesse con precisione. […]»</p><p class="cartoncino__chi"><b>Giulia S.</b> <span data-i18n="d.g3s">Google, 3 settimane fa</span></p></li>
+      <li class="cartoncino reveal"><p lang="it" class="cartoncino__testo">«Mi sono affidato a loro per il vestito della mia laurea e rifarei la stessa scelta altre mille volte. Fin dal primo momento si sono dimostrati estremamente professionali, attenti e soprattutto capaci di guidarmi passo dopo passo nelle scelte.Non si sono limitati a prendere le misure: mi hanno consigliato con grande competenza su abbinamenti come scarpe e cintura, dettagli e stile, sempre con l’obiettivo di valorizzarmi al meglio. Ogni suggerimento era mirato, mai casuale, e il risultato finale lo dimostra. […]»</p><p class="cartoncino__chi"><b>Luca Papetti</b> <span data-i18n="d.g5m">Google, 5 mesi fa</span></p></li>
+      <li class="cartoncino reveal"><p lang="it" class="cartoncino__testo">«Professionisti come Dio della sartoria comanda !!! Abbiamo dovuto sistemare un abito da donna complessa di organza di seta e lunga. Lo hanno fatto in modo impeccabile . Grazie mille !»</p><p class="cartoncino__chi"><b>Claudia Hamers</b> <span data-i18n="d.g7m">Google, 7 mesi fa</span></p></li>
+      <li class="cartoncino reveal"><p lang="it" class="cartoncino__testo">«Grazie per tutti i lavori sartoriali svolti per i miei abiti e per il cappotto di mia madre che è stato accorciato alla perfezione. Sartoria molto competente per capi firmati.»</p><p class="cartoncino__chi"><b>Federico Draeke</b> <span data-i18n="d.g4m">Google, 4 mesi fa</span></p></li>
+      <li class="cartoncino reveal"><p lang="it" class="cartoncino__testo">«Esperienza più che positiva! Mi hanno consigliato questa sartoria per sistemare il mio abito da sposa. Sono stati disponibili e molto professionali nell’esaudire le mie richieste. […] Consiglio vivamente!»</p><p class="cartoncino__chi"><b>Bianca Asnaghi</b> <span data-i18n="d.g1m">Google, 1 mese fa</span></p></li>
     </ul>
     <p class="dicono__nota"><span data-i18n="d.nota">Dalle recensioni su Google, come sono state scritte; […] dove abbiamo tagliato. La frase in alto è di un'altra cliente, sempre su Google.</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=Monks+Suit%2C+Corso+Vittorio+Emanuele+II+22%2C+20122+Milano" target="_blank" rel="noopener" data-i18n="d.tutte">Tutte le recensioni su Google</a></p>
   </section>
@@ -261,7 +307,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <p class="orari__nota" data-i18n="o.nota">Orari dalla nostra scheda Google (settembre 2026). Per un appuntamento chiamate o scriveteci su WhatsApp.</p>
     <div class="dove" id="dove">
       <div class="cartina reveal">
-        <iframe title="Mappa: Monks Suit, Corso Vittorio Emanuele II 22, Milano" data-i18n-title="w.mappa" src="https://maps.google.com/maps?q=Monks%20Suit%2C%20Corso%20Vittorio%20Emanuele%20II%2022%2C%2020122%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="mappa-clic" data-mappa-clic style="--mappa-h: 400px"><template><iframe title="Mappa: Monks Suit, Corso Vittorio Emanuele II 22, Milano" data-i18n-title="w.mappa" src="https://maps.google.com/maps?q=Monks%20Suit%2C%20Corso%20Vittorio%20Emanuele%20II%2022%2C%2020122%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Monks+Suit%2C+Corso+Vittorio+Emanuele+II+22%2C+20122+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
       </div>
       <div>
         <dl class="indirizzo">
@@ -285,7 +331,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <p class="piede__dove">Corso Vittorio Emanuele II 22, 20122 Milano · <a href="tel:+390286996644" class="intero">02 8699 6644</a></p>
     <p class="piede__orario" data-i18n="f2.orario">Dal lunedì al venerdì 10–19 · il sabato 10–17 · su appuntamento</p>
     <p class="piede__social"><a href="https://www.instagram.com/monks_suit/" target="_blank" rel="noopener">Instagram</a> · <a href="https://wa.me/393396992502" target="_blank" rel="noopener">WhatsApp</a></p>
-    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · orari, voto e recensioni dalla loro scheda Google (settembre 2026); le loro parole da Instagram e dal loro sito; le foto da Instagram, dal loro sito e dalla loro scheda Google. L'asola l'abbiamo disegnata noi.</p>
+    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · orari, voto e recensioni dalla loro scheda Google (settembre 2026); le loro parole da Instagram e dal loro sito; le foto da Instagram, dal loro sito e dalla loro scheda Google. L'asola l'abbiamo disegnata noi.</p>
     <p><a class="piede__su" href="#inizio" data-i18n="f2.su">Torna su ↑</a></p>
   </div>
 </footer>
@@ -300,5 +346,6 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
   <img id="lightboxImg" src="" alt="">
 </div>
 
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
